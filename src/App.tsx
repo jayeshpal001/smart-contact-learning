@@ -7,6 +7,7 @@ import { RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit";
 
 import { CoffeeForm } from "./components/features/CoffeeForm";
 import { config, queryClient } from "./config/wagami";
+import { CheckUSDT } from "./components/features/CheckUSDT";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             {/* Feature Component */}
             <div className="relative z-10 w-full">
               <CoffeeForm />
+              <CheckUSDT/>
             </div>
           </div>
         </RainbowKitProvider>
