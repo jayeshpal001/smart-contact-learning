@@ -35,11 +35,11 @@ export const CoffeeForm = () => {
     });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault(); 
     if (!amount) return;
 
     sendTransaction({
-      to: "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266", // Replace with your wallet
+      to: "0x0B6EE99e250B2FB981DD7BC25F07055bf2D0FBb2", // Replace with your wallet
       value: parseEther(amount),
     });
   };
